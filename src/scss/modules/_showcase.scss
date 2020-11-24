@@ -78,22 +78,6 @@
       }
     }
   }
-
-  .showcase_bottom {
-    max-width: 848px;
-    margin: 70px auto 55px;
-    font-size: 30px;
-    line-height: 36px;
-    text-align: center;
-
-    .text1 {
-      color: $white;
-    }
-
-    .text2 {
-      color: $primary1;
-    }
-  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -131,13 +115,6 @@
           max-height: 468px;
         }
       }
-    }
-
-    .showcase_bottom {
-      max-width: 710px;
-      margin: 55px auto;
-      font-size: 18px;
-      line-height: 22px;
     }
   }
 }
@@ -223,13 +200,6 @@
           margin: 20px auto 0;
         }
       }
-    }
-
-    .showcase_bottom {
-      max-width: 289px;
-      margin: 20px auto 22px;
-      font-size: 18px;
-      line-height: 22px;
     }
   }
 }
