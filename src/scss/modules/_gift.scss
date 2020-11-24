@@ -1,0 +1,59 @@
+.gifts {
+  .gifts_wrapper {
+    .gifts_top {
+      .gifts_title {
+        max-width: 672px;
+        margin: 0 auto;
+        font-family: $font-medium !important;
+        font-size: 36px;
+        line-height: 43px;
+        text-align: center;
+        color: $white;
+      }
+
+      .gifts_subtitle {
+        font-family: $font-medium !important;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        color: $primary1;
+        margin-top: 15px;
+        margin-bottom: 34px;
+      }
+    }
+
+    .gifts_row {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 35px;
+
+      .gifts_item {
+        flex: 0 1 calc(100% / 2 - 15px);
+
+        .item_title {
+          font-size: 20px;
+          line-height: 24px;
+          color: $white;
+          font-family: $font-medium !important;
+          margin-top: 20px;
+          margin-bottom: 14px;
+        }
+
+        .item_text {
+          font-size: 16px;
+          line-height: 18px;
+          color: $white;
+          margin-bottom: 14px;
+        }
+
+        .item_link {
+          cursor: pointer;
+          text-decoration: none;
+          font-size: 14px;
+          line-height: 1;
+          color: $primary1;
+        }
+      }
+    }
+  }
+}
