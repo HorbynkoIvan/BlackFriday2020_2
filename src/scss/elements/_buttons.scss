@@ -170,14 +170,18 @@
 
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .btn_type1 {
-    width: 197px;
+  .btn_300_48{
+    width: 275px;
   }
 
-  .btn_type2{
-    max-width: 307px;
-    width: 100%;
-  }
+  //.btn_type1 {
+  //
+  //}
+  //
+  //.btn_type2{
+  //  max-width: 307px;
+  //  width: 100%;
+  //}
 }
 
 @media only screen and (max-width: 767px) {

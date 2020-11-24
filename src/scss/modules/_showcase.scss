@@ -91,52 +91,36 @@
 
 @media only screen and (max-width: 1024px) {
   .showcase {
-    padding: 0 0 40px 0;
+    //padding: 0 0 40px 0;
 
     .showcase_top {
 
       .top_left {
         width: 50%;
-
-        .title {
-          font-size: 24px;
-          line-height: 23px;
-          margin: 50px 0 5px 0;
-        }
+        padding-top: 18px;
 
         .bf2020 {
           img {
-            max-width: 347px;
+            max-width: 374px;
             width: 100%;
           }
         }
 
-        .decor_text {
-          bottom: 93px;
-
-          width: 1000px;
-          height: 50px;
-
-          font-size: 24px;
-          line-height: 23px;
-        }
-
-        .decor_price {
-          position: absolute;
-          left: -48px;
-          bottom: 22px;
-          z-index: 0;
-
-          width: 346px;
-          height: 50px;
-
-          font-size: 24px;
-          line-height: 23px;
-        }
       }
 
       .top_right {
         width: 50%;
+        .decor_text {
+          display: none;
+        }
+
+        .decor_price {
+          display: none;
+        }
+        img{
+          max-width: initial;
+          max-height: 468px;
+        }
       }
     }
 
@@ -149,41 +133,41 @@
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 960px) {
-  .showcase {
-
-    .showcase_top {
-
-      .top_left {
-
-        .title {
-          //margin: 50px 0 5px 0;
-          margin: 25px 0 5px 0;
-        }
-
-        .bf2020 {
-          img {
-            max-width: 235px;
-          }
-        }
-
-        .decor_text {
-          //width: 700px;
-          //bottom: 93px;
-          //bottom: 88px;
-
-          width: 750px;
-          bottom: 77px;
-        }
-
-        .decor_price {
-          //bottom: 22px;
-          bottom: 19px;
-        }
-      }
-    }
-  }
-}
+//@media only screen and (min-width: 768px) and (max-width: 960px) {
+//  .showcase {
+//
+//    .showcase_top {
+//
+//      .top_left {
+//
+//        .title {
+//          //margin: 50px 0 5px 0;
+//          margin: 25px 0 5px 0;
+//        }
+//
+//        .bf2020 {
+//          img {
+//            max-width: 235px;
+//          }
+//        }
+//
+//        .decor_text {
+//          //width: 700px;
+//          //bottom: 93px;
+//          //bottom: 88px;
+//
+//          width: 750px;
+//          bottom: 77px;
+//        }
+//
+//        .decor_price {
+//          //bottom: 22px;
+//          bottom: 19px;
+//        }
+//      }
+//    }
+//  }
+//}
 
 @media only screen and (max-width: 767px) {
   .showcase {
