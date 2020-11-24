@@ -1,0 +1,12 @@
+@media only screen and (max-width: 767px) {
+  .wrap {
+    //@include min-max(320px, 1600px, 30%);
+    @include min-max(320px, 1024px, 0);
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .wrap {
+   // @include min-max(320px, 1600px, 20px);
+  }
+}

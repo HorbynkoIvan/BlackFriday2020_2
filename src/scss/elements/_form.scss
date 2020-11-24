@@ -1,0 +1,46 @@
+#bf2020_form{
+  .input{
+    width: 380px;
+    height: 48px;
+    background: #FFFFFF;
+    border: 2px solid #919EAB;
+    box-sizing: border-box;
+    border-radius: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1;
+    color: $primary7;
+    outline: none;
+  }
+
+  .subscription_tooltip{
+    display: none;
+    font-size: 14px;
+    line-height: 1;
+    color: $primary1;
+    text-align: center;
+    margin-top: 5px;
+  }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #bf2020_form{
+    .input{
+      max-width: 307px;
+      width: 100%;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+  #bf2020_form{
+    .input{
+      max-width: 288px;
+      width: 100%;
+    }
+  }
+
+}

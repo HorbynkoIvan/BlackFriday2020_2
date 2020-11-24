@@ -1,0 +1,5 @@
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .wrap {
+    @include min-max(320px, 1024px, 12.5%);
+  }
+}

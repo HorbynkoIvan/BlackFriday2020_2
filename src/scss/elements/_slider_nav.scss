@@ -1,0 +1,67 @@
+.arrow_left, .arrow_right {
+  width: 35px;
+  height: 65px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+
+//style dots
+.slick-dots {
+  text-align: center;
+  margin-top: 30px;
+
+  li {
+    display: inline-block;
+    border: none;
+    margin: 0 5px;
+
+    button {
+      width: 15px;
+      height: 15px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      border-radius: 50%;
+      background-color: $primary2;
+      transition: background-color .3s ease;
+      font-size: 0; //remove number in dots
+    }
+
+    &.slick-active {
+      button {
+        background-color: $primary3;
+      }
+    }
+  }
+}
+
+//force slides to have the same height
+//.slick-track {
+//  display: flex !important;
+//}
+//
+//.slick-slide {
+//  height: inherit !important;
+//  &>div{
+//    height: 100%;
+//  }
+//
+//  .item{
+//    height: 100%;
+//  }
+//}
+
+
+@media only screen and (max-width: 1024px) {
+
+}
+
+@media only screen and (max-width: 767px) {
+  .arrow_left, .arrow_right {
+    width: 26px;
+    height: 50px;
+  }
+}

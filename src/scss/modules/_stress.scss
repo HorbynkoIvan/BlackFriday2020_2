@@ -1,0 +1,320 @@
+.stress {
+  padding: 0 0 100px 0;
+
+  .stress_content {
+    display: flex;
+
+    .stress_left {
+      position: relative;
+
+      .stress_comment {
+        position: absolute;
+        right: 0;
+        top: -35px;
+        background: url("https://cdnparftop.parfums.ua/public/upload/newAdminUpload/Landing/bf2020/comment1.svg") center top no-repeat;
+        background-size: cover;
+        width: 208px;
+        height: 110px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        span {
+          max-width: 160px;
+          font-size: 15px;
+          line-height: 1;
+          color: $white;
+        }
+      }
+
+    }
+
+    .stress_right {
+      flex-grow: 1;
+
+      h3 {
+        font-size: 24px;
+        line-height: 27px;
+        text-align: center;
+        color: $white;
+        font-family: $font-medium !important;
+      }
+
+      .counter {
+        display: flex;
+        margin-top: 50px;
+
+        .counter_item {
+          flex: 0 1 100%;
+
+          .counter_block {
+            background: url("https://cdnparftop.parfums.ua/public/upload/newAdminUpload/Landing/bf2020/counter_bg.png") top center no-repeat;
+            background-size: contain;
+            height: 180px;
+            position: relative;
+
+            .counter_value {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              z-index: 1;
+
+              font-size: 100px;
+              line-height: 111px;
+              color: $white;
+            }
+          }
+        }
+
+        p {
+          font-size: 18px;
+          line-height: 1;
+          text-align: center;
+          color: $white;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+
+  .promo {
+    background: $primary4;
+    border-radius: 8px;
+    padding: 40px 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .promo_left {
+      width: 50%;
+
+      h4 {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 1;
+        color: $primary1;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 22px;
+        color: $white;
+      }
+    }
+
+    .promo_right {
+      width: 50%;
+
+      #bf2020_form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .subscription_tooltip {
+          // display: none;
+        }
+        .btn_type2{
+          font-family: $font-medium !important;
+        }
+
+        .second_screen{
+          text-align: center;
+          color: $white;
+          div{
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .stress {
+    padding: 0 0 40px 0;
+
+    .stress_content {
+
+      .stress_left {
+
+        img {
+          max-width: 238px;
+        }
+
+        .stress_comment {
+          right: 0;
+          top: -35px;
+          width: 164px;
+          height: 82px;
+
+          span {
+            max-width: 130px;
+            font-size: 14px;
+          }
+        }
+
+      }
+
+      .stress_right {
+        h3 {
+          font-size: 24px;
+          line-height: 27px;
+        }
+
+        .counter {
+          display: flex;
+          margin-top: 15px;
+
+          .counter_item {
+            flex: 0 1 100%;
+
+            .counter_block {
+              height: 129px;
+              position: relative;
+
+              .counter_value {
+                font-size: 70px;
+                line-height: 67px;
+              }
+            }
+          }
+
+          p {
+            font-size: 18px;
+            line-height: 17px;
+            margin-top: 13px;
+          }
+        }
+      }
+    }
+
+    .promo {
+      padding: 25px 40px;
+      display: flex;
+
+      .promo_left {
+
+        h4 {
+          font-size: 24px;
+          margin-bottom: 10px;
+        }
+      }
+
+      .promo_right {
+
+      }
+    }
+  }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+  .stress {
+
+    .stress_content {
+
+      .stress_right {
+
+        .counter {
+
+          .counter_item {
+
+            .counter_block {
+              //height: 129px;
+              height: 90px;
+
+              .counter_value {
+                //font-size: 70px;
+                //line-height: 67px;
+                font-size: 48px;
+                line-height: 48px;
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+  .stress {
+    padding: 0;
+
+    .stress_content {
+
+      .stress_left {
+        display: none;
+      }
+
+      .stress_right {
+        max-width: 286px;
+        margin: 0 auto 44px;
+
+        h3 {
+          font-size: 20px;
+          line-height: 24px;
+        }
+
+        .counter {
+          margin-top: 10px;
+
+          .counter_item {
+
+            .counter_block {
+              height: 75px;
+
+              .counter_value {
+                font-size: 40px;
+                line-height: 38px;
+              }
+            }
+          }
+
+          p {
+            font-size: 14px;
+            line-height: 13px;
+            margin-top: 8px;
+          }
+        }
+      }
+    }
+
+    .promo {
+      padding: 20px;
+      flex-direction: column;
+
+      .promo_left {
+        width: 100%;
+        text-align: center;
+
+        h4 {
+          font-size: 20px;
+          line-height: 24px;
+          margin-bottom: 10px;
+        }
+      }
+
+      .promo_right {
+        width: 100%;
+        margin-top: 14px;
+
+        #bf2020_form {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .subscription_tooltip {
+            // display: none;
+          }
+        }
+      }
+    }
+  }
+}
