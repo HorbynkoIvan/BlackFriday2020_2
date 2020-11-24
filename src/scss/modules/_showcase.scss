@@ -9,6 +9,10 @@
       position: relative;
       padding-top: 57px;
 
+      .title {
+        display: none;
+      }
+
       .showcase_btn {
         font-family: $font-medium !important;
         position: absolute;
@@ -69,6 +73,9 @@
         line-height: 33px;
         color: $black;
       }
+      .showcase_btn_mob{
+        display: none;
+      }
     }
   }
 
@@ -110,6 +117,7 @@
 
       .top_right {
         width: 50%;
+
         .decor_text {
           display: none;
         }
@@ -117,7 +125,8 @@
         .decor_price {
           display: none;
         }
-        img{
+
+        img {
           max-width: initial;
           max-height: 468px;
         }
@@ -133,45 +142,9 @@
   }
 }
 
-//@media only screen and (min-width: 768px) and (max-width: 960px) {
-//  .showcase {
-//
-//    .showcase_top {
-//
-//      .top_left {
-//
-//        .title {
-//          //margin: 50px 0 5px 0;
-//          margin: 25px 0 5px 0;
-//        }
-//
-//        .bf2020 {
-//          img {
-//            max-width: 235px;
-//          }
-//        }
-//
-//        .decor_text {
-//          //width: 700px;
-//          //bottom: 93px;
-//          //bottom: 88px;
-//
-//          width: 750px;
-//          bottom: 77px;
-//        }
-//
-//        .decor_price {
-//          //bottom: 22px;
-//          bottom: 19px;
-//        }
-//      }
-//    }
-//  }
-//}
-
 @media only screen and (max-width: 767px) {
   .showcase {
-    padding: 0 0 20px 0;
+    //padding: 0 0 20px 0;
 
     .showcase_top {
       flex-direction: column;
@@ -179,48 +152,76 @@
       .top_left {
         max-width: 289px;
         margin: 0 auto 20px;
+        padding-top: 27px;
         width: 100%;
 
+        .showcase_btn {
+          display: none;
+        }
+
         .title {
+          display: block;
           font-size: 25px;
           line-height: 24px;
-          margin: 25px 0 5px 0;
+          color: $white;
+          text-align: center;
+          margin-bottom: 5px;
         }
 
         .bf2020 {
           img {
-            max-width: 347px;
+            max-width: 100%;
             width: 100%;
           }
         }
+      }
+
+      .top_right {
+        width: 100%;
 
         .decor_text {
-          left: -3px;
-          bottom: -35px;
+          display: flex;
+          bottom: auto;
+
+          left: auto;
+          right: -28px;
+          top: -17px;
           z-index: 3;
 
-          width: 307.35px;
-          height: 30px;;
+          width: 308px;
+          height: 35px;;
 
           font-size: 20px;
           line-height: 19px;
         }
 
         .decor_price {
-          left: 0px;
-          bottom: -68px;
+          display: flex;
+          top: 15px;
+          right: 18px;
+          left: auto;
+          bottom: auto;
           z-index: 2;
 
-          width: 278.89px;
-          height: 30px;
+          width: 279px;
+          height: 35px;
 
           font-size: 20px;
           line-height: 19px;
-        }
-      }
 
-      .top_right {
-        width: 100%;
+          padding-left: 123px;
+        }
+
+        img {
+          max-width: 100%;
+          max-height: 100%;
+        }
+
+        .showcase_btn_mob{
+          font-family: $font-medium !important;
+          display: flex;
+          margin: 20px auto 0;
+        }
       }
     }
 
