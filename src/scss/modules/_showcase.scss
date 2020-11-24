@@ -1,5 +1,5 @@
 .showcase {
-  padding: 0 0 40px 0;
+  //padding: 0 0 40px 0;
 
   .showcase_top {
     display: flex;
@@ -7,33 +7,40 @@
 
     .top_left {
       position: relative;
+      padding-top: 57px;
 
-      .title {
-        font-size: 30px;
-        line-height: 33px;
-        color: $white;
-        margin: 70px 0 20px 0;
+      .showcase_btn {
+        font-family: $font-medium !important;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
       }
+    }
+
+    .top_right {
+      position: relative;
+      z-index: 1;
 
       .decor_text {
         position: absolute;
-        left: -57px;
-        bottom: 127px;
+        left: -30px;
+        bottom: 122px;
         z-index: 1;
 
-        width: 1510.08px;
-        height: 60px;
-        background: linear-gradient(89.94deg, #FB5ECF 1.02%, #00FFF0 42.84%);
+        width: 992px;
+        height: 50px;
+        background: linear-gradient(90deg, #FB5ECF 0.53%, #00FFF0 71.41%);
         transform: rotate(-6deg);
         display: flex;
         align-items: center;
-        //justify-content: flex-end;
-        padding-left: 48px;
+        padding-left: 22px;
 
         font-size: 30px;
         line-height: 33px;
         color: $black;
-        span{
+
+        span {
           font-family: $font-medium !important;
         }
       }
@@ -42,31 +49,26 @@
         span {
           font-family: $font-medium !important;
         }
-          position: absolute;
-        left: -48px;
-        bottom: 22px;
+
+        position: absolute;
+        left: -24px;
+        bottom: 46px;
         z-index: 0;
 
-        width: 444.21px;
-        height: 60px;
-        background: linear-gradient(295.59deg, #FB5ECF 40.27%, #7B0059 64.73%);
+        width: 444px;
+        height: 50px;
+        background: linear-gradient(290.16deg, #FB5ECF 47.59%, #8D0066 72.91%);
         transform: rotate(6deg);
         display: flex;
         align-items: center;
-        justify-content: flex-end;
-        padding-right: 18px;
+        // justify-content: flex-end;
+        padding-left: 202px;
         box-sizing: border-box;
 
         font-size: 30px;
         line-height: 33px;
         color: $black;
-        //  padding-left: 48px;
       }
-    }
-
-    .top_right {
-      position: relative;
-      z-index: 1;
     }
   }
 
@@ -103,7 +105,7 @@
         }
 
         .bf2020 {
-          img{
+          img {
             max-width: 347px;
             width: 100%;
           }
@@ -160,7 +162,7 @@
         }
 
         .bf2020 {
-          img{
+          img {
             max-width: 235px;
           }
         }
@@ -188,7 +190,7 @@
     padding: 0 0 20px 0;
 
     .showcase_top {
-     flex-direction: column;
+      flex-direction: column;
 
       .top_left {
         max-width: 289px;
@@ -202,11 +204,12 @@
         }
 
         .bf2020 {
-          img{
+          img {
             max-width: 347px;
             width: 100%;
           }
         }
+
         .decor_text {
           left: -3px;
           bottom: -35px;
