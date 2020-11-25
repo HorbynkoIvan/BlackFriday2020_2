@@ -55,3 +55,29 @@
     }
   }
 }
+
+@media only screen and (max-width: 1024px) {
+  .subscribe {
+    padding: 49px 0 12px;
+    .decor_string2 {
+      display: none;
+    }
+
+    .subscribe_wrapper {
+
+      .subscribe_btn {
+        width: 250px;
+        height: 48px;
+      }
+
+      .subscribe_socials {
+        margin-top: 58px;
+
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+}

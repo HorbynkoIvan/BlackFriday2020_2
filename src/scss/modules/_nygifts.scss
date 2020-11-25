@@ -3,77 +3,61 @@
   padding-top: 127px;
 
   .promo {
-    background: linear-gradient(89.86deg, $primary1 0.1%, $primary2 99.88%);
-    border-radius: 8px;
-    padding: 2px;
-    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    height: 250px;
-    width: 100%;
+    .promo_left {
+      position: relative;
+      width: 50%;
 
-    .promo_inner {
-      width: 100%;
-      height: 100%;
-      background: radial-gradient(48.05% 599.06% at 28.81% 51.38%, #212B36 0%, #000000 100%);
-      border-radius: 8px;
-
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      .promo_left {
-        position: relative;
-        width: 50%;
-        height: 100%;
-        .promo_img-wr{
-          position: absolute;
-          left: 50%;
-          top: -44px;
-          transform: translateX(-50%);
-        }
-      }
-
-      .promo_right {
-        width: 50%;
-
-        .promo_content {
-          max-width: 470px;
-
-          .text1 {
-            font-family: $font-medium !important;
-            margin-bottom: 15px;
-            font-size: 36px;
-            line-height: 40px;
-            color: $white;
-          }
-
-          .text2 {
-            font-family: $font-medium !important;
-            font-size: 24px;
-            line-height: 26px;
-            margin-bottom: 10px;
-            color: $primary2;
-          }
-        }
-
-        .promo_link {
-          font-family: $font-medium !important;
-          cursor: pointer;
-          text-decoration: none;
-          font-size: 20px;
-          line-height: 1;
-          color: $primary1;
-        }
+      .promo_img-wr {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
       }
     }
 
+    .promo_right {
+      width: 50%;
 
+      .promo_content {
+        max-width: 470px;
+
+        .text1 {
+          font-family: $font-medium !important;
+          margin-bottom: 28px;
+          font-size: 36px;
+          line-height: 40px;
+          color: $primary2;
+        }
+
+        .text2 {
+          font-family: $font-medium !important;
+          font-size: 24px;
+          line-height: 26px;
+          margin-bottom: 15px;
+
+          color: $white;
+        }
+      }
+
+      .promo_link {
+        font-family: $font-medium !important;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 20px;
+        line-height: 1;
+        color: $primary1;
+      }
+    }
   }
 }
 
 @media only screen and (max-width: 1024px) {
   .nygifts {
-    padding: 0 0 40px 0;
+    padding: 85px 0 40px 0;
 
     .nygifts_top {
       max-width: 710px;
@@ -88,25 +72,30 @@
       box-sizing: border-box;
 
       .promo_left {
-
+        img {
+          max-width: 230px;
+        }
       }
 
       .promo_right {
 
         .promo_content {
-          max-width: 470px;
+          max-width: 293px;
 
           p {
-            font-size: 18px;
-            line-height: 22px;
+
           }
 
           .text1 {
-            margin-bottom: 15px;
+            margin-bottom: 17px;
+            font-size: 20px;
+            line-height: 22px;
           }
 
           .text2 {
             margin-bottom: 10px;
+            font-size: 18px;
+            line-height: 20px;
           }
         }
 
