@@ -57,6 +57,10 @@
       }
     }
 
+    .brands_content_mob {
+      display: none;
+    }
+
     .brands_btn {
       width: 300px;
       height: 52px;
@@ -103,20 +107,87 @@
       }
 
 
-
       .brands_btn {
         width: 251px;
         height: 48px;
         margin: 47px auto 0;
-
-        span {
-          font-family: $font-medium !important;
-        }
       }
     }
   }
 }
 
 @media only screen and (max-width: 767px) {
+  .brands {
+    padding-top: 32px;
 
+    .brands_wrapper {
+      max-width: 286px;
+      margin: 0 auto;
+      .brands_top {
+        .brands_title {
+          font-size: 20px;
+          line-height: 20px;
+        }
+      }
+
+      .brands_content {
+        display: none;
+      }
+
+      .brands_content_mob {
+        display: flex;
+        justify-content: center;
+        max-width: 286px;
+        margin: 0 auto;
+        .row {
+          display: flex;
+          justify-content: flex-start;
+          flex-direction: column;
+          width: 33.333%;
+
+          &:not(:last-child) {
+            margin-right: 10px;
+          }
+
+          .item {
+            text-decoration: none;
+            //flex: 0 1 84px;
+            //max-width: 84px;
+            height: 47px;
+            background: #212B36;
+            border-radius: 8px;
+            border: 2px solid transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+
+            transition: border-color 0.3s;
+            box-sizing: border-box;
+
+            img {
+              //max-width: 100%;
+              max-width: 74px;
+              max-height: 100%;
+            }
+
+            &:hover, &:active {
+              border-color: #00FFF0;
+            }
+          }
+        }
+      }
+
+
+      .brands_btn {
+        width: 220px;
+        height: 48px;
+        margin: 20px auto 0;
+
+        span {
+          font-size: 18px;
+        }
+      }
+    }
+  }
 }
