@@ -4,17 +4,19 @@
   .stress_top {
     max-width: 848px;
     margin: 109px auto 13px;
-    font-size: 36px;
-    line-height: 43px;
     text-align: center;
 
 
     .text1 {
+      font-size: 36px;
+      line-height: 43px;
       color: $primary1;
       font-family: $font-medium !important;
     }
 
     .text2 {
+      font-size: 36px;
+      line-height: 43px;
       color: $white;
       font-family: $font-medium !important;
     }
@@ -79,8 +81,6 @@
         }
 
         .promo_link {
-          cursor: pointer;
-          text-decoration: none;
           font-size: 20px;
           line-height: 1;
           color: $primary1;
@@ -97,46 +97,44 @@
     .stress_top {
       max-width: 710px;
       margin: 73px auto 5px;
-      font-size: 30px;
-      line-height: 36px;
+
+      .text1, .text2 {
+        font-size: 30px;
+        line-height: 36px;
+      }
     }
 
     .promo {
-      height: auto;
-      padding: 25px 0;
-      box-sizing: border-box;
+      height: 250px;
 
-      .promo_left {
+      .promo_inner {
+        .promo_left {
 
-      }
-
-      .promo_right {
-
-        .promo_content {
-          max-width: 470px;
-
-          p {
-            font-size: 18px;
-            line-height: 22px;
-          }
-
-          .text1 {
-            margin-bottom: 15px;
-          }
-
-          .text2 {
-            margin-bottom: 10px;
-          }
         }
 
-        .promo_link {
-          cursor: pointer;
-          text-decoration: none;
-          font-size: 20px;
-          line-height: 1;
-          color: $primary1;
+        .promo_right {
+
+          .promo_content {
+            max-width: 346px;
+
+            p {
+              font-size: 18px;
+              line-height: 22px;
+            }
+
+            .text1 {
+              margin-bottom: 15px;
+            }
+
+            .text2 {
+              margin-bottom: 10px;
+            }
+          }
+
+
         }
       }
+
     }
   }
 
@@ -145,43 +143,57 @@
 @media only screen and (max-width: 767px) {
   .stress {
     padding: 0;
+    max-width: 320px;
+    margin: 0 auto;
 
-    .showcase_bottom {
-      max-width: 289px;
-      margin: 20px auto 22px;
-      font-size: 18px;
-      line-height: 22px;
+    .stress_top {
+      margin: 38px auto 17px;
+
+      .text1, .text2 {
+        font-size: 20px;
+        line-height: 24px;
+      }
     }
 
     .promo {
-      padding: 20px;
-      flex-direction: column;
+      height: auto;
 
-      .promo_left {
-        width: 100%;
-        text-align: center;
+      .promo_inner {
+        flex-direction: column;
+        padding: 17px;
+        box-sizing: border-box;
 
-        h4 {
-          font-size: 20px;
-          line-height: 24px;
-          margin-bottom: 10px;
-        }
-      }
+        .promo_left {
+          width: 100%;
+          text-align: center;
 
-      .promo_right {
-        width: 100%;
-        margin-top: 14px;
-
-        #bf2020_form {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-
-          .subscription_tooltip {
-            // display: none;
+          h4 {
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 10px;
           }
         }
+
+        .promo_right {
+          width: 100%;
+          margin-top: 14px;
+
+          .promo_content {
+
+            p {
+              font-size: 14px;
+              line-height: 17px;
+            }
+          }
+
+          .promo_link {
+            font-size: 14px;
+            line-height: 17px;
+          }
+
+        }
       }
+
     }
   }
 }
