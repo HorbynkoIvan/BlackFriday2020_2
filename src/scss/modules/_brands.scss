@@ -1,0 +1,62 @@
+.brands {
+  padding-top: 70px;
+  .brands_wrapper {
+    .brands_top {
+      .brands_title {
+        font-family: $font-medium !important;
+        font-size: 36px;
+        line-height: 36px;
+        text-align: center;
+        color: $white;
+      }
+
+      .brands_subtitle {
+        font-family: $font-medium !important;
+        font-size: 24px;
+        line-height: 24px;
+        text-align: center;
+        color: $primary1;
+        margin-top: 15px;
+        margin-bottom: 34px;
+      }
+    }
+
+    .brands_content{
+      .row {
+        display: flex;
+        justify-content: space-between;
+        &:not(:last-child){
+          margin-bottom: 20px;
+        }
+
+        .item {
+          //flex: 0 1 calc(100% / 5 - 18px);
+          flex: 0 1 176px;
+          height: 100px;
+          background: #212B36;
+          border-radius: 8px;
+          border: 2px solid transparent;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          transition: border-color 0.3s;
+          box-sizing: border-box;
+
+          &:hover, &:active {
+            border-color: #00FFF0;
+          }
+        }
+      }
+    }
+
+
+
+    .brands_comment{
+      font-size: 14px;
+      line-height: 17px;
+      color: #738397;
+      margin-top: 7px;
+    }
+  }
+}
