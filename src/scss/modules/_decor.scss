@@ -1,0 +1,34 @@
+.decor_line1 {
+  position: absolute;
+  width: 2002.71px;
+  height: 80px;
+  left: -1.71px;
+  top: 1719.85px;
+
+  background: linear-gradient(89.98deg, #00FFF0 16.68%, #003633 49.95%, #FB5ECF 81.71%);
+  transform: rotate(10deg);
+
+  //img {
+  //  max-width: 100%;
+  //  max-height: 100%;
+  //  transform: rotate(10deg);
+  //}
+  span{
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 65px;
+    //display: flex;
+    //align-items: center;
+    //text-align: center;
+    text-transform: uppercase;
+    background: transparent  -20px -20px no-repeat;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    //color: rgba(255, 255, 255, 0.4);
+    //text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    //text-shadow: -1px 0 $white;
+
+    //mix-blend-mode: screen;
+    //transform: rotate(10deg);
+  }
+}

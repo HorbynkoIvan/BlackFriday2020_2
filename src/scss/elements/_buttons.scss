@@ -1,10 +1,9 @@
-.btn_300_48{
+.btn_300_48 {
   width: 300px;
   height: 48px;
 }
 
 .btn_type1 {
-  //font-family: $font-medium !important;
   font-size: 24px;
   line-height: 1;
   color: $black;
@@ -16,77 +15,17 @@
   position: relative;
   overflow: hidden;
 
-  &:after {
-    animation: sheen1 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
-    content: '';
-    width: 100px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: -55px;
-    transform: rotateZ(-45deg);
-    background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.5) 50%, transparent);
-  }
-
-  @keyframes sheen1 {
-    100% {
-      left: 300px;
-    }
-  }
-
   background: linear-gradient(89.86deg, $primary1 0.1%, $primary2 99.88%);
   border-radius: 30px;
 
+  transition: box-shadow 0.3s ease-in-out;
+
   &:hover, &:active {
-    background: linear-gradient(89.86deg, $primary2 0.1%, $primary1 99.88%);
+    background: linear-gradient(89.86deg, #00FFF0 0.1%, #FB5ECF 99.88%);
+    box-shadow: 0px 0px 15px 0px $primary2;
   }
 }
 
-//.btn_type1 {
-//  font-family: $font-medium !important;
-//  text-decoration: none;
-//  width: 290px;
-//  height: 48px;
-//  display: flex;
-//  justify-content: center;
-//  align-items: center;
-//  cursor: pointer;
-//  position: relative;
-//  overflow: hidden;
-//
-//  &:after {
-//    animation: sheen1 2s;
-//    animation-iteration-count: infinite;
-//    animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
-//    content: '';
-//    width: 100px;
-//    height: 100%;
-//    position: absolute;
-//    top: 0;
-//    left: -55px;
-//    transform: rotateZ(-45deg);
-//    background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.5) 50%, transparent);
-//  }
-//
-//  @keyframes sheen1 {
-//    100% {
-//      left: 300px;
-//    }
-//  }
-//
-//  font-size: 18px;
-//  line-height: 1;
-//  color: $black;
-//
-//  background: linear-gradient(89.86deg, $primary1 0.1%, $primary2 99.88%);
-//  border-radius: 30px;
-//
-//  &:hover, &:active {
-//    background: linear-gradient(89.86deg, $primary2 0.1%, $primary1 99.88%);
-//  }
-//}
 
 .btn_type2 {
   font-family: $font-medium !important;
@@ -134,13 +73,13 @@
 }
 
 .btn_type3 {
-  font-family: $font-medium !important;
   color: $white;
-  width: 220px;
-  height: 48px;
-  background: url("https://cdnparftop.parfums.ua/public/upload/newAdminUpload/Landing/bf2020/button_bg.svg") top center no-repeat;
-  background-size: cover;
-  text-decoration: inherit;
+  //background: url("https://cdnparftop.parfums.ua/public/upload/newAdminUpload/Landing/bf2020/button_bg.svg") top center no-repeat;
+  //background-size: cover;
+  background: linear-gradient(89.86deg, $primary1 0.1%, $primary2 99.88%);
+  padding: 2px;
+  box-sizing: border-box;
+  text-decoration: none;
   border-radius: 30px;
   border: none;
   outline: none;
@@ -148,29 +87,45 @@
   position: relative;
   overflow: hidden;
 
-  &:after {
-    animation: sheen3 2s forwards;
-    animation-iteration-count: infinite;
-    content: '';
-    width: 100px;
+  display: block;
+
+  span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     height: 100%;
-    position: absolute;
-    top: 0;
-    left: -55px;
-    transform: rotateZ(-45deg);
-    background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.5) 50%, transparent);
+    background: $black;
+    border-radius: 30px;
   }
 
-  @keyframes sheen3 {
-    100% {
-      left: 220px;
-    }
+  &:hover, &:active {
+    box-shadow: 0px 0px 15px 0px $primary2;
   }
+
+  //&:after {
+  //  animation: sheen3 2s forwards;
+  //  animation-iteration-count: infinite;
+  //  content: '';
+  //  width: 100px;
+  //  height: 100%;
+  //  position: absolute;
+  //  top: 0;
+  //  left: -55px;
+  //  transform: rotateZ(-45deg);
+  //  background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.5) 50%, transparent);
+  //}
+  //
+  //@keyframes sheen3 {
+  //  100% {
+  //    left: 220px;
+  //  }
+  //}
 }
 
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .btn_300_48{
+  .btn_300_48 {
     width: 275px;
   }
 
@@ -185,14 +140,14 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .btn_300_48{
+  .btn_300_48 {
     width: 285px;
   }
 
-  .btn_type1{
-   font-size: 18px;
+  .btn_type1 {
+    font-size: 18px;
   }
-  .btn_type2{
+  .btn_type2 {
     max-width: 288px;
     width: 100%;
   }

@@ -82,7 +82,11 @@
     justify-content: center;
 
     .btn_type3 {
-      font-family: $font-medium !important;
+      width: 220px;
+      height: 48px;
+      span{
+        font-family: $font-medium !important;
+      }
     }
   }
 }

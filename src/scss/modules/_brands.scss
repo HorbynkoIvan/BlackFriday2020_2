@@ -31,6 +31,7 @@
 
         .item {
           //flex: 0 1 calc(100% / 5 - 18px);
+          text-decoration: none;
           flex: 0 1 176px;
           height: 100px;
           background: #212B36;
@@ -50,13 +51,20 @@
       }
     }
 
-
-
     .brands_comment{
       font-size: 14px;
       line-height: 17px;
       color: #738397;
       margin-top: 7px;
+    }
+
+    .brands_btn{
+      width: 300px;
+      height: 52px;
+      margin: 41px auto 0;
+      span{
+        font-family: $font-medium !important;
+      }
     }
   }
 }

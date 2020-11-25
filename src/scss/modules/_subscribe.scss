@@ -1,0 +1,48 @@
+.subscribe {
+  padding: 277px 0 12px;
+
+  .subscribe_wrapper {
+    max-width: 383px;
+    margin: 0 auto;
+
+    .subscribe_btn {
+      width: 322px;
+      height: 52px;
+      font-family: $font-medium !important;
+      margin: 0 auto;
+    }
+
+    .subscribe_socials {
+      display: flex;
+      margin-top: 94px;
+
+      .text {
+        color: $white;
+        font-family: $font-medium !important;
+        font-size: 20px;
+        line-height: 24px;
+      }
+
+      .links {
+        display: flex;
+
+        .social_link {
+          border-radius: 50%;
+        }
+
+        .face {
+          margin-right: 30px;
+          &:hover, &:active {
+            box-shadow: 0px 0px 15px 0px $primary2;
+          }
+        }
+
+        .insta {
+          &:hover, &:active {
+            box-shadow: 0px 0px 15px 0px $primary1;
+          }
+        }
+      }
+    }
+  }
+}

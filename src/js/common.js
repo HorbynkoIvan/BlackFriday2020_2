@@ -21,7 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
         const $aboutBottom = $('.about_bottom');
 
         $btnMore.on('click', function () {
-            $(this).text(function (i, text) {
+            $(this).find('span').text(function (i, text) {
                 return text === "Читати повністю" ? "Згорнути" : "Читати повністю";
             })
 

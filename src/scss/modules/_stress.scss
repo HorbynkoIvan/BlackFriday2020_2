@@ -1,5 +1,6 @@
 .stress {
   padding-bottom: 90px;
+
   .stress_top {
     max-width: 848px;
     margin: 109px auto 13px;
@@ -20,51 +21,70 @@
   }
 
   .promo {
-    background: url("/assets/img/v2/stress_bg.svg") top center no-repeat;
-    background-size: cover;
-    // padding: 29px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: block;
+    background: linear-gradient(89.86deg, $primary1 0.1%, $primary2 99.88%);
+    border-radius: 8px;
+    padding: 2px;
+    box-sizing: border-box;
+
     height: 290px;
     width: 100%;
+    text-decoration: none;
+    transition: box-shadow 0.3s ease-in-out;
 
-    .promo_left {
-      width: 50%;
-
+    &:hover, &:active {
+      box-shadow: 0px -10px 15px -6px #00FFF0, /* top - THE RED SHADOW */
+      0px 5px 15px 0px #FB5ECF, /* bottom */
+      5px 0px 15px 0px #00FFF0, /* right */
+      -5px 0px 15px 0px #FB5ECF; /* left */
     }
 
-    .promo_right {
-      width: 50%;
+    .promo_inner {
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(48.05% 599.06% at 28.81% 51.38%, #212B36 0%, #000000 100%);
+      border-radius: 8px;
 
-      .promo_content {
-        max-width: 470px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
-        p {
-          font-size: 24px;
-          line-height: 29px;
-          color: $white;
+      .promo_left {
+        width: 50%;
+      }
 
-          span {
-            color: $primary2;
+      .promo_right {
+        width: 50%;
+
+        .promo_content {
+          max-width: 470px;
+
+          p {
+            font-size: 24px;
+            line-height: 29px;
+            color: $white;
+
+            span {
+              color: $primary2;
+            }
+          }
+
+          .text1 {
+            margin-bottom: 15px;
+          }
+
+          .text2 {
+            margin-bottom: 10px;
           }
         }
 
-        .text1 {
-          margin-bottom: 15px;
+        .promo_link {
+          cursor: pointer;
+          text-decoration: none;
+          font-size: 20px;
+          line-height: 1;
+          color: $primary1;
         }
-
-        .text2 {
-          margin-bottom: 10px;
-        }
-      }
-
-      .promo_link {
-        cursor: pointer;
-        text-decoration: none;
-        font-size: 20px;
-        line-height: 1;
-        color: $primary1;
       }
     }
   }
