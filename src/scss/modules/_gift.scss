@@ -12,6 +12,7 @@
   .gifts_wrapper {
     position: relative;
     z-index: 1;
+
     .gifts_top {
       .gifts_title {
         max-width: 672px;
@@ -140,59 +141,57 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .stress {
-    padding: 0;
-    max-width: 320px;
-    margin: 0 auto;
+  .gifts {
 
-    .stress_top {
-      margin: 38px auto 17px;
-
-      .text1, .text2 {
-        font-size: 20px;
-        line-height: 24px;
-      }
-    }
-
-    .promo {
-      height: auto;
-
-      .promo_inner {
-        flex-direction: column;
-        padding: 17px;
-        box-sizing: border-box;
-
-        .promo_left {
-          width: 100%;
-          text-align: center;
-
-          h4 {
-            font-size: 20px;
-            line-height: 24px;
-            margin-bottom: 10px;
-          }
+    .gifts_wrapper {
+      .gifts_top {
+        .gifts_title {
+          font-size: 20px;
+          line-height: 24px;
         }
 
-        .promo_right {
-          width: 100%;
-          margin-top: 14px;
+        .gifts_subtitle {
+          font-size: 18px;
+          line-height: 22px;
+          margin-top: 5px;
+          margin-bottom: 15px;
+        }
+      }
 
-          .promo_content {
+      .gifts_row {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 0px;
 
-            p {
-              font-size: 14px;
-              line-height: 17px;
-            }
+        .gifts_item {
+          flex: none;
+          margin-bottom: 40px;
+          .item_title {
+            font-size: 16px;
+            line-height: 19px;
+            padding: 0 15px;
           }
 
-          .promo_link {
+          .item_text {
             font-size: 14px;
             line-height: 17px;
+            padding: 0 15px;
           }
 
+          .item_link {
+            line-height: 17px;
+            margin-left: 15px;
+          }
         }
       }
 
+      .gifts_comment {
+        font-size: 12px;
+        line-height: 14px;
+        margin-top: 7px;
+        padding: 0 15px;
+      }
     }
   }
 }

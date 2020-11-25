@@ -116,40 +116,45 @@
   .nygifts {
     padding: 0;
 
-    .showcase_bottom {
-      max-width: 289px;
-      margin: 20px auto 22px;
-      font-size: 18px;
-      line-height: 22px;
-    }
-
     .promo {
-      padding: 20px;
       flex-direction: column;
 
       .promo_left {
         width: 100%;
-        text-align: center;
-
-        h4 {
-          font-size: 20px;
-          line-height: 24px;
-          margin-bottom: 10px;
+        .promo_img-wr{
+          position: static;
+          transform: none;
+        }
+        img {
+          max-width: 200px;
+          margin: 0 auto;
         }
       }
 
       .promo_right {
         width: 100%;
-        margin-top: 14px;
-
-        #bf2020_form {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-
-          .subscription_tooltip {
-            // display: none;
+        text-align: center;
+        .promo_content{
+          max-width: 254px;
+          margin: 0 auto;
+          text-align: center;
+          .text1 {
+            margin-top: 29px;
+            margin-bottom: 5px;
+            font-size: 16px;
+            line-height: 19px;
           }
+
+          .text2 {
+            margin-bottom: 5px;
+            font-size: 14px;
+            line-height: 17px;
+          }
+        }
+        .promo_link{
+          font-size: 14px;
+          line-height: 17px;
+          text-align: center;
         }
       }
     }
