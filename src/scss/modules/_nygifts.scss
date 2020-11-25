@@ -1,0 +1,172 @@
+.nygifts {
+  padding-bottom: 90px;
+  padding-top: 127px;
+
+  .promo {
+    background: linear-gradient(89.86deg, $primary1 0.1%, $primary2 99.88%);
+    border-radius: 8px;
+    padding: 2px;
+    box-sizing: border-box;
+
+    //background: url("/assets/img/v2/nygifts_bg.svg") top center no-repeat;
+    //background-size: cover;
+    // padding: 29px 0;
+
+    height: 250px;
+    width: 100%;
+
+    .promo_inner {
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(48.05% 599.06% at 28.81% 51.38%, #212B36 0%, #000000 100%);
+      border-radius: 8px;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .promo_left {
+        position: relative;
+        width: 50%;
+        height: 100%;
+        .promo_img-wr{
+          position: absolute;
+          left: 50%;
+          top: -44px;
+          transform: translateX(-50%);
+        }
+      }
+
+      .promo_right {
+        width: 50%;
+
+        .promo_content {
+          max-width: 470px;
+
+          .text1 {
+            font-family: $font-medium !important;
+            margin-bottom: 15px;
+            font-size: 36px;
+            line-height: 40px;
+            color: $white;
+          }
+
+          .text2 {
+            font-family: $font-medium !important;
+            font-size: 24px;
+            line-height: 26px;
+            margin-bottom: 10px;
+            color: $primary2;
+          }
+        }
+
+        .promo_link {
+          font-family: $font-medium !important;
+          cursor: pointer;
+          text-decoration: none;
+          font-size: 20px;
+          line-height: 1;
+          color: $primary1;
+        }
+      }
+    }
+
+
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .nygifts {
+    padding: 0 0 40px 0;
+
+    .nygifts_top {
+      max-width: 710px;
+      margin: 73px auto 5px;
+      font-size: 30px;
+      line-height: 36px;
+    }
+
+    .promo {
+      height: auto;
+      padding: 25px 0;
+      box-sizing: border-box;
+
+      .promo_left {
+
+      }
+
+      .promo_right {
+
+        .promo_content {
+          max-width: 470px;
+
+          p {
+            font-size: 18px;
+            line-height: 22px;
+          }
+
+          .text1 {
+            margin-bottom: 15px;
+          }
+
+          .text2 {
+            margin-bottom: 10px;
+          }
+        }
+
+        .promo_link {
+          cursor: pointer;
+          text-decoration: none;
+          font-size: 20px;
+          line-height: 1;
+          color: $primary1;
+        }
+      }
+    }
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+  .nygifts {
+    padding: 0;
+
+    .showcase_bottom {
+      max-width: 289px;
+      margin: 20px auto 22px;
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    .promo {
+      padding: 20px;
+      flex-direction: column;
+
+      .promo_left {
+        width: 100%;
+        text-align: center;
+
+        h4 {
+          font-size: 20px;
+          line-height: 24px;
+          margin-bottom: 10px;
+        }
+      }
+
+      .promo_right {
+        width: 100%;
+        margin-top: 14px;
+
+        #bf2020_form {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .subscription_tooltip {
+            // display: none;
+          }
+        }
+      }
+    }
+  }
+}
