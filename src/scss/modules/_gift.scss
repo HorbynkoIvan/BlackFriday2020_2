@@ -30,6 +30,21 @@
       .gifts_item {
         flex: 0 1 calc(100% / 2 - 15px);
 
+        .gifts_card {
+          border-radius: 8px;
+
+          img {
+            border-radius: 8px;
+          }
+
+          &:hover {
+            box-shadow: 0px -10px 15px -6px #00FFF0, /* top - THE RED SHADOW */
+            0px 5px 15px 0px #FB5ECF, /* bottom */
+            5px 0px 15px 0px #00FFF0, /* right */
+            -5px 0px 15px 0px #FB5ECF; /* left */
+          }
+        }
+
         .item_title {
           font-size: 20px;
           line-height: 24px;
@@ -56,7 +71,7 @@
       }
     }
 
-    .gifts_comment{
+    .gifts_comment {
       font-size: 14px;
       line-height: 17px;
       color: #738397;

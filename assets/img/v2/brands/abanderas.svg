@@ -1,6 +1,7 @@
-<svg width="160" height="74" viewBox="0 0 160 74" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="176" height="100" viewBox="0 0 176 100" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="176" height="100" rx="8" fill="#212B36"/>
 <g style="mix-blend-mode:screen">
-<rect y="0.00012207" width="160" height="74" fill="url(#pattern0)"/>
+<rect x="8" y="17.0001" width="160" height="74" fill="url(#pattern0)"/>
 </g>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">

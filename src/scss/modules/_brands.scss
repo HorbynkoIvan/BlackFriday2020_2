@@ -1,5 +1,6 @@
 .brands {
   padding-top: 70px;
+
   .brands_wrapper {
     .brands_top {
       .brands_title {
@@ -21,16 +22,16 @@
       }
     }
 
-    .brands_content{
+    .brands_content {
       .row {
         display: flex;
         justify-content: space-between;
-        &:not(:last-child){
+
+        &:not(:last-child) {
           margin-bottom: 20px;
         }
 
         .item {
-          //flex: 0 1 calc(100% / 5 - 18px);
           text-decoration: none;
           flex: 0 1 176px;
           height: 100px;
@@ -44,6 +45,11 @@
           transition: border-color 0.3s;
           box-sizing: border-box;
 
+          img {
+            max-width: 100%;
+            max-height: 100%;
+          }
+
           &:hover, &:active {
             border-color: #00FFF0;
           }
@@ -51,18 +57,19 @@
       }
     }
 
-    .brands_comment{
+    .brands_comment {
       font-size: 14px;
       line-height: 17px;
       color: #738397;
       margin-top: 7px;
     }
 
-    .brands_btn{
+    .brands_btn {
       width: 300px;
       height: 52px;
       margin: 41px auto 0;
-      span{
+
+      span {
         font-family: $font-medium !important;
       }
     }

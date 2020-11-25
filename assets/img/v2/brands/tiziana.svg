@@ -1,6 +1,8 @@
-<svg width="176" height="39" viewBox="0 0 176 39" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="176" height="100" viewBox="0 0 176 100" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="176" height="100" rx="8" fill="#212B36"/>
+<path d="M0 31H176V70H0V31Z" fill="#212B36"/>
 <g style="mix-blend-mode:screen">
-<rect width="176" height="39" fill="url(#pattern0)"/>
+<rect y="30" width="176" height="39" fill="url(#pattern0)"/>
 </g>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
