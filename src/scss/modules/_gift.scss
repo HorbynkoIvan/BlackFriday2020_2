@@ -1,5 +1,17 @@
 .gifts {
+  position: relative;
+
+  .decor_string1 {
+    position: absolute;
+    top: 450px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+  }
+
   .gifts_wrapper {
+    position: relative;
+    z-index: 1;
     .gifts_top {
       .gifts_title {
         max-width: 672px;
