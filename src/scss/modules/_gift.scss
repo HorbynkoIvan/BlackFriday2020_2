@@ -44,18 +44,36 @@
         flex: 0 1 calc(100% / 2 - 15px);
 
         .gifts_card {
+          position: relative;
+          display: block;
+          background: linear-gradient(89.86deg, $primary1 0.1%, $primary2 99.88%);
           border-radius: 8px;
+          padding: 3px;
+          box-sizing: border-box;
+          width: 100%;
+          text-decoration: none;
+          transition: box-shadow 0.3s ease-in-out;
 
-          img {
-            border-radius: 8px;
-          }
-
-          &:hover {
+          &:hover, &:active {
             box-shadow: 0px -10px 15px -6px #00FFF0, /* top - THE RED SHADOW */
             0px 5px 15px 0px #FB5ECF, /* bottom */
             5px 0px 15px 0px #00FFF0, /* right */
             -5px 0px 15px 0px #FB5ECF; /* left */
           }
+
+          img{
+            border-radius: 6px;
+          }
+          .card_text{
+            position: absolute;
+            bottom: 10px;
+            right: 15px;
+
+            font-size: 14px;
+            line-height: 17px;
+            color: #738397;
+          }
+
         }
 
         .item_title {
@@ -121,6 +139,15 @@
         .gifts_item {
           flex: 0 1 calc(100% / 2 - 15px);
 
+          .gifts_card {
+
+            .card_text{
+              right: 10px;
+              font-size: 13px;
+            }
+
+          }
+
           .item_title {
             font-size: 18px;
             line-height: 22px;
@@ -167,6 +194,16 @@
         .gifts_item {
           flex: none;
           margin-bottom: 40px;
+
+          .gifts_card {
+
+            .card_text{
+              right: 10px;
+              font-size: 12px;
+            }
+
+          }
+
           .item_title {
             font-size: 16px;
             line-height: 19px;
