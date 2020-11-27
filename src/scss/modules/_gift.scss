@@ -98,6 +98,11 @@
           font-size: 14px;
           line-height: 1;
           color: $primary1;
+          transition: color 0.3s;
+
+          &:hover{
+            color: $primary2;
+          }
         }
       }
     }

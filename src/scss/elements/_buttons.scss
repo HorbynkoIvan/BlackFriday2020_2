@@ -18,7 +18,7 @@
   background: linear-gradient(89.86deg, $primary1 0.1%, $primary2 99.88%);
   border-radius: 30px;
 
-  transition: box-shadow 0.3s ease-in-out;
+  transition: all 0.3s ease;
 
   &:hover, &:active {
     background: linear-gradient(89.86deg, #00FFF0 0.1%, #FB5ECF 99.88%);
@@ -88,6 +88,8 @@
   overflow: hidden;
 
   display: block;
+
+  transition: box-shadow 0.3s;
 
   span {
     display: flex;
